@@ -74,6 +74,8 @@
             </div>
         </nav>
         <div class="home wrapper">
+            <h1 id="titreresp" 
+            >Jazz festival <br>aux Baiser salé</h1>
             <img src="img/abstract-7476911_1280 1.svg" alt="logo1">
             <div class="text">
 
@@ -84,9 +86,7 @@
                 >Plongez dans l'univers <span class="important">envoûtant</span> du jazz où chaque note raconte une <span class="important">histoire</span> , et laissez-vous emporter par le rythme captivant d'un festival qui célèbre l'âme de cette musique <span class="important">intemporelle</span>. </p>
                 <div class="compteur">
                     <p id="demo"></p>
-                    <p>
-                        Jours heure min sec
-                    </p>
+                    
                 </div>
                    
             </div>
@@ -110,6 +110,7 @@
                         </div>
                         <a href="artiste.html" class="image-link">
                             <div class="image-container">
+                                
                                 <img class="img3 default" src="img/steve lacy 1.svg" alt="Steve Lacy">
                                 
                             </div>
@@ -380,7 +381,7 @@
                 </div>
             </div>
             <div id="copyrightf">
-                <p>copyright2024</p>
+                <p>copyright©2024</p>
             </div>
            
         </div>
@@ -413,8 +414,8 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
         // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "   " + hours + "     "
-        + minutes + "      " + seconds + "";
+        document.getElementById("demo").innerHTML = days + "j  " + hours + "h    "
+        + minutes + "m     " + seconds + "s";
             
         // If the count down is over, write some text 
         if (distance < 0) {

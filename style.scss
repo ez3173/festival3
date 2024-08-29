@@ -7,6 +7,9 @@
     
     
 }
+body{
+    background-color: #1A0D43;
+}
 .important{
     color: #E67B35;
 }
@@ -88,6 +91,7 @@ header{
         }
         #burger-menu{
             display: none;
+            
         }
         ul{
             display: grid;
@@ -115,6 +119,9 @@ header{
         grid-template-columns: repeat(2,1fr);
         padding: 20px;
         justify-content: center;
+        #titreresp{
+            display: none;
+        }
         img{
             margin-top: 25px;
             width: 36vw;
@@ -136,7 +143,7 @@ header{
                 line-height: 2;
                 margin-left: 12px;
                 text-align: center;
-                font-size: 32px;
+                font-size: 30px;
             }
             
             .compteur{
@@ -516,8 +523,11 @@ footer{
             width: 40vw;
         }
         .logoa{
-            width: 100%;
+            width: 345px;
             display: flex;
+            margin-top: 15px;
+            margin-left: 0;
+            
         }
         .expl{
             display: flex;
@@ -767,7 +777,7 @@ font-size: 24px;
         .Tickets{
             height: fit-content;
             .ticket{
-                height: 700px;
+                
                 padding-bottom: 15px;
                 .ticket1,.ticket2{
                     .bouton2{
@@ -823,8 +833,21 @@ font-size: 24px;
     .wrapper {
         margin: 0 24px;
     }
+    header{
+        .home{
+            #titreresp{
+                display: block;
+                color: #fff;
+                padding-top: 15px;
+                font-size: 48px;
+                text-align: center;
+        
+            }
+        }
+    }
     h1{
-        padding-top:12px ;
+        display: none;
+        
     }
 
     header {
@@ -838,7 +861,7 @@ font-size: 24px;
                 cursor: pointer;
                 height: 27px;
                 width: 27px;
-                margin-left: 5px;
+                margin-left: 15px;
                 margin-top: 25px;
                 overflow: visible;
                 position: fixed;
@@ -931,6 +954,7 @@ font-size: 24px;
                 &.overlay {
                     visibility: visible;
                     opacity: 1;
+                    backdrop-filter: blur(15px);
                     padding-top: 100px;
                     background: rgba(0, 0, 0, 0.5);
                 }
@@ -968,7 +992,7 @@ font-size: 24px;
             img {
                
                 transform: rotate(90deg);
-                height: 80vw;
+                height: 75vw;
                 width:auto;
                 
             }
@@ -1006,27 +1030,33 @@ font-size: 24px;
     main {
         #Line-up {
             height:fit-content;
+            
             .lineup {
                 grid-template-columns: repeat(1, 1fr);
                 row-gap: 15px;
-                #lineup1{
-                    h1{
-                        
-                        color: #fff;
-                    }
+                .lineups{
+                    height: 100%;
                 }
-                #lineup2{
-                    width: 86vw;
-                    h1{
-                        color: #1A0D43;
-                        display: none;
+                
+                    #lineup1{
+                        h1{
+                            
+                            color: #fff;
+                        }
                     }
-                }
-                #lineup3{
-                    h1{
-                        display: none;
+                    #lineup2{
+                        width: 86vw;
+                        h1{
+                            color: #1A0D43;
+                            display: none;
+                        }
                     }
-                }
+                    #lineup3{
+                        h1{
+                            display: none;
+                        }
+                    }
+                
             }
 
         }
@@ -1221,7 +1251,7 @@ font-size: 24px;
             .logof{
                 width:100%;
                 grid-area: logof;
-                overflow: hidden;
+                
             }
             .iconf{
                 grid-area: iconf;
@@ -1233,6 +1263,16 @@ font-size: 24px;
    
 } 
 @media all and (max-width: 1505px){
+    header{
+        .home{
+            .text{
+                p{
+                    font-size: 24px;
+                }
+                
+            }
+        }
+    }
     main{
         .activite{
             .activites{
@@ -1439,6 +1479,11 @@ font-size: 24px;
                         }
                     }
                 }
+            }
+        }
+        #artiste{
+            #logoa2{
+                width:100% ;
             }
         }
     }

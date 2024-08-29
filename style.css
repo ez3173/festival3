@@ -6,6 +6,10 @@
   font-style: normal;
 }
 
+body {
+  background-color: #1A0D43;
+}
+
 .important {
   color: #E67B35;
 }
@@ -107,6 +111,9 @@ header .home {
   padding: 20px;
   justify-content: center;
 }
+header .home #titreresp {
+  display: none;
+}
 header .home img {
   margin-top: 25px;
   width: 36vw;
@@ -126,7 +133,7 @@ header .home .text p {
   line-height: 2;
   margin-left: 12px;
   text-align: center;
-  font-size: 32px;
+  font-size: 30px;
 }
 header .home .text .compteur {
   display: flex;
@@ -445,8 +452,10 @@ footer #copyrightf p {
   width: 40vw;
 }
 #artiste .artiste .logoa {
-  width: 100%;
+  width: 345px;
   display: flex;
+  margin-top: 15px;
+  margin-left: 0;
 }
 #artiste .artiste .expl {
   display: flex;
@@ -653,7 +662,6 @@ input {
     height: fit-content;
   }
   main .Tickets .ticket {
-    height: 700px;
     padding-bottom: 15px;
   }
   main .Tickets .ticket .ticket1 .bouton2, main .Tickets .ticket .ticket2 .bouton2 {
@@ -698,8 +706,15 @@ input {
   .wrapper {
     margin: 0 24px;
   }
+  header .home #titreresp {
+    display: block;
+    color: #fff;
+    padding-top: 15px;
+    font-size: 48px;
+    text-align: center;
+  }
   h1 {
-    padding-top: 12px;
+    display: none;
   }
   header {
     width: 100%;
@@ -711,7 +726,7 @@ input {
     cursor: pointer;
     height: 27px;
     width: 27px;
-    margin-left: 5px;
+    margin-left: 15px;
     margin-top: 25px;
     overflow: visible;
     position: fixed;
@@ -781,6 +796,7 @@ input {
   header nav #menu.overlay {
     visibility: visible;
     opacity: 1;
+    backdrop-filter: blur(15px);
     padding-top: 100px;
     background: rgba(0, 0, 0, 0.5);
   }
@@ -808,7 +824,7 @@ input {
   }
   header .home img {
     transform: rotate(90deg);
-    height: 80vw;
+    height: 75vw;
     width: auto;
   }
   header .home .text {
@@ -844,6 +860,9 @@ input {
   main #Line-up .lineup {
     grid-template-columns: repeat(1, 1fr);
     row-gap: 15px;
+  }
+  main #Line-up .lineup .lineups {
+    height: 100%;
   }
   main #Line-up .lineup #lineup1 h1 {
     color: #fff;
@@ -1018,13 +1037,15 @@ input {
   footer .footer3 .logof {
     width: 100%;
     grid-area: logof;
-    overflow: hidden;
   }
   footer .footer3 .iconf {
     grid-area: iconf;
   }
 }
 @media all and (max-width: 1505px) {
+  header .home .text p {
+    font-size: 24px;
+  }
   main .activite .activites {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1146,6 +1167,9 @@ input {
   }
   main .Infos .infos .contact .contacts p {
     width: fit-content;
+  }
+  #artiste #logoa2 {
+    width: 100%;
   }
 }
 
