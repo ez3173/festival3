@@ -61,14 +61,14 @@
             <div id="menu">
                   
                 <ul>
-                    <li ><a href="index.html">Home</a></li>
-                    <li  ><a href="index.html#Line-up"
+                    <li ><a href="index.html"class="menu-item">Home</a></li>
+                    <li  ><a href="index.html#Line-up"class="menu-item"
                         >Line-up</a></li>
-                    <li><a href="index.html#activite"
+                    <li><a href="index.html#activite"class="menu-item"
                         >Activités</a></li>
-                    <li><a href="index.html#ticket"
+                    <li><a href="index.html#ticket"class="menu-item"
                         >Tickets</a></li>
-                    <li><a href="index.html#info"
+                    <li><a href="index.html#info"class="menu-item"
                         >Infos</a></li>
                 </ul>
             </div>
@@ -79,7 +79,7 @@
             <img src="img/abstract-7476911_1280 1.svg" alt="logo1">
             <div class="text">
 
-                <h1 
+                <h1 id="titrenorm" 
                 >Jazz festival <br>aux Baiser salé</h1>
                 
                 <p 
@@ -112,13 +112,16 @@
                             <div class="image-container">
                                 
                                 <img class="img3 default" src="img/steve lacy 1.svg" alt="Steve Lacy">
+                                <span class="tooltiptext">Steve Lacy</span>
                                 
                             </div>
                         </a>
                         <a href="artiste.html">
-
-                            <img class="img4 small" src="img/téléchargé (1) 1.svg" alt="">
-                            
+                            <div class="image-container">
+                                
+                                <img class="img4 small" src="img/téléchargé (1) 1.svg" alt="Norah Jones">
+                                <span class="tooltiptext">NorahJones</span>
+                            </div>
                         </a>
                     </div>
                     <div class="lineups" id="lineup2">
@@ -131,14 +134,17 @@
                         </div>
                         
                         <a href="artiste.html">
-
-                            <img class="img3 default"src="img/Screenshot+2023-09-22+at+3.23 1.svg" alt="">
-                            
+                            <div class="image-container">
+                                
+                                <img class="img3 default"src="img/Screenshot+2023-09-22+at+3.23 1.svg" alt="Laufey">
+                                <span class="tooltiptext">Laufey</span>
+                            </div>
                         </a>
                         <a href="artiste.html">
-
-                            <img class="img4 small" src="img/A-3384-1330016032 1.svg" alt="The Cinematic Orchestra">
-                            
+                            <div class="image-container">
+                                <img class="img4 small" src="img/A-3384-1330016032 1.svg" alt="The Cinematic Orchestra">
+                                <span class="tooltiptext">The Cinematic Orchestra</span>
+                            </div>
                         </a>
                         
                     </div>
@@ -151,14 +157,16 @@
                             >18/9</h2>
                         </div>
                         <a href="artiste.html">
-
-                            <img class="img3 default" src="img/Michael-Buble-1-c70dcf5adc0d47ca8e1449178cc4c26b 1.svg" alt="Michael Buble">
-                            
+                            <div class="image-container">
+                                <img class="img3 default" src="img/Michael-Buble-1-c70dcf5adc0d47ca8e1449178cc4c26b 1.svg" alt="Michael Buble">
+                                <span class="tooltiptext">Michael Buble</span>
+                            </div>
                         </a>
                         <a href="artiste.html">
-
-                            <img class="img4 small" src="img/A-3384-1330016032 1.svg" alt="The Cinematic Orchestra">
-                            
+                            <div class="image-container">
+                                <img class="img4 small" src="img/A-3384-1330016032 1.svg" alt="The Cinematic Orchestra">
+                                <span class="tooltiptext">The Cinematic Orchestra</span>
+                            </div>
                         </a>
                     </div>
                 </div>   
@@ -374,10 +382,18 @@
                     <img src="img/abstract-7476939_1280 1.svg" alt="logo2">
                  </div>
                 <div class="iconf">
-                    <img src="icon/Vector-1.png" alt="twitter">
+                    <a href="#">
+                        <img src="icon/Vector-1.png" alt="twitter">
+                    </a>
+                    <a href="#">
                     <img src="icon/Vector-2.png" alt="instagram">
+                    </a>
+                    <a href="#">
                     <img src="icon/Vector-3.png" alt="youtube">
+                    </a>
+                    <a href="#">
                     <img src="icon/Vector.png" alt="facebook">
+                    </a>
                 </div>
             </div>
             <div id="copyrightf">
@@ -390,10 +406,17 @@
         var burgerMenu = document.getElementById('burger-menu');
 
         var overlay = document.getElementById('menu');
+        var menuItems = document.querySelectorAll('.menu-item');
 
         burgerMenu.addEventListener('click', function() {
         this.classList.toggle("close");
         overlay.classList.toggle("overlay");
+        });
+        
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                menu.classList.remove('overlay');
+            });
         });
         // Set the date we're counting down to
         var countDownDate = new Date("September7, 2024 15:37:25").getTime();
