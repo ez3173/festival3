@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+    </style>
+    <title>Artiste</title>
+</head>
+<body>
+    <header id="headerart">
+        <nav >
+            <div id="burger-menu">
+                <span></span>
+            </div>
+              
+            <div id="menu">
+                  
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="index.html#Line-up"
+                        >Line-up</a></li>
+                    <li><a href="index.html#activite"
+                        >Activités</a></li>
+                    <li><a href="index.html#ticket"
+                        >Tickets</a></li>
+                    <li><a href="index.html#info"
+                        >Infos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>    
+    <main id="artiste">
+        <div class="wrapper">
+            <div class="titrefa">
+                <div class="bouton2 btn-g">
+                    <img  src="icon/fleche-inverse.png" alt="fleche-inverse">
+                    <a 
+                     href="index.html" class="gauche"></a>
+                </div>
+                <h1 
+                >The Cinematic Orchestra</h1>
+                <div class="bouton2 btn-d">
+                    <a 
+                     href="index.html"class="droite"> </a>
+                    <img src="icon/fleche.png"  alt="fleche">
+                </div>
+            </div>
+            <div class="artiste">
+                <div class="photo">
+                    <img src="img/A-3384-1330016032 2.svg" alt="The Cinematic Orchestra">
+                    <div class="logoa" id="logoa1">
+                        <a href="#">
+        
+                            <img src= "icon/youtube.svg" alt="logo youtube">
+                        </a>
+                        <a href="#">
+                            
+                            <img src="icon/instagram.svg" alt="logo instagram">
+                        </a>
+                        <a href="#">
+                            <img src="icon/facebook.svg" alt="logo facebook">
+        
+                        </a>
+                        <a href="#">
+                            <img src= "icon/spotify.svg" alt="logo spotify">
+                            
+                        </a>
+                        <a href="#">
+                            <img src="icon/twitter.svg" alt="logo twitter">
+        
+                        </a>
+        
+                    </div>
+    
+                </div>
+                <div class="expl">
+                    <h2 
+                    >le 17 juillet 2024</h2>
+                    <h3 
+                    >de 18 à 19 heure</h3>
+                    <p 
+                    >
+                    The Cinematic Orchestra est un groupe britannique fondé en 1999 par Jason Swinscoe. Leur musique mélange habilement le jazz, l'électronique, et la musique orchestrale, créant des atmosphères cinématographiques et immersives. Le groupe est particulièrement connu pour son album "Every Day" (2002), qui a rencontré un grand succès grâce à des morceaux comme "All That You Give" et "Man with the Movie Camera".
+                    </p>
+
+                </div>  
+            </div>
+            <div class="spotf">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/32ogthv0BdaSMPml02X9YB?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+
+                </iframe>
+            </div>
+            <div class="logoa" id="logoa2">
+                <a href="#">
+
+                    <img src= "icon/youtube.svg" alt="logo youtube">
+                </a>
+                <a href="#">
+                    
+                    <img src="icon/instagram.svg" alt="logo instagram">
+                </a>
+                <a href="#">
+                    <img src="icon/facebook.svg" alt="logo facebook">
+
+                </a>
+                <a href="#">
+                    <img src= "icon/spotify.svg" alt="logo spotify">
+                    
+                </a>
+                <a href="#">
+                    <img src="icon/twitter.svg" alt="logo twitter">
+
+                </a>
+
+            </div>
+        </div>
+   </main> 
+   <Script>
+        var burgerMenu = document.getElementById('burger-menu');
+
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+        });
+   </Script>
+</body>
+</html>

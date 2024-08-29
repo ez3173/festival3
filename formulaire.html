@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+    </style>
+</head>
+<body>
+    <header id="headerform">
+        <nav >
+            <div id="burger-menu">
+                <span></span>
+            </div>
+              
+            <div id="menu">
+                  
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li  ><a href="index.html#Line-up"
+                        >Line-up</a></li>
+                    <li><a href="index.html#activite"
+                        >Activités</a></li>
+                    <li><a href="index.html#ticket"
+                        >Tickets</a></li>
+                    <li><a href="index.html#info"
+                        >Infos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>  
+    <main id="formulaire">
+        <div class="wrapper">
+            <h1 class="allerta-stencil-regular ">Formulaire</h1>
+
+            <div class="formulaires">
+
+                <div class="formulaire">
+                    <h2 class="allerta-stencil-regular ">nom</h2>
+                    <input type="text" name="nom" id="nom" >
+                </div>
+                <div class="formulaire">
+                    <h2 class="allerta-stencil-regular ">Prenom</h2>
+                    <input type="text" name="prenom"id="prenom" >
+                </div>
+                <div class="formulaire">
+                    <h2 class="allerta-stencil-regular ">address email</h2>
+                    <input type="email" name="email" id="email" >
+                </div>
+                <div class="formulaireText">
+                    <h2 class="allerta-stencil-regular ">message</h2>
+                    <textarea id="message" name="message" rows:5 ></textarea>
+                </div>
+                <div class="downMusic">
+                    <h2 class="allerta-stencil-regular ">musique(max 3min)</h2>
+                    <img src="icon/download.svg" alt="musique">
+                </div>
+                <div class="envoyer">
+                    <a href="#">
+                        
+
+                            <input type="submit" value="envoyer">
+                        
+                    </a>
+                </div>
+            </div> 
+        </div>   
+    </main>
+    <script>
+        var burgerMenu = document.getElementById('burger-menu');
+
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function() {
+        this.classList.toggle("close");
+        overlay.classList.toggle("overlay");
+        });
+    </script>
+</body>
+</html>

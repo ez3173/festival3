@@ -1,0 +1,1152 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Allerta Stencil", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.important {
+  color: #E67B35;
+}
+
+.btn-g img {
+  padding-top: 5px;
+  margin-right: 0;
+}
+.btn-g a {
+  font-size: 30px;
+}
+
+.btn-d img {
+  padding-top: 5px;
+  margin-right: 0;
+}
+.btn-d a {
+  font-size: 30px;
+}
+
+.wrapper {
+  margin: 0 14vw;
+  height: 100%;
+}
+
+.bouton {
+  display: flex;
+  background-color: #E3D56D;
+  border-radius: 150px;
+  padding: 10px;
+  width: 200px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.bouton a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.bouton2 {
+  display: flex;
+  background-color: #E3D56D;
+  border-radius: 150px;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.bouton2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+.bouton2:active {
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  background-color: #1A0D43;
+  height: fit-content;
+}
+header nav {
+  font-size: 32px;
+}
+header nav #menu {
+  width: 100%;
+  background-color: #1A0D43;
+  height: 50px;
+  position: fixed;
+}
+header nav #burger-menu {
+  display: none;
+}
+header nav ul {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(5, 1fr);
+}
+header nav ul .second {
+  grid-column: 2;
+}
+header nav ul li {
+  list-style: none;
+  text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+}
+header .home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+  justify-content: center;
+}
+header .home img {
+  margin-top: 25px;
+  width: 36vw;
+}
+header .home .text {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+header .home .text h1 {
+  padding-top: 15px;
+  font-size: 48px;
+  text-align: center;
+}
+header .home .text p {
+  line-height: 2;
+  margin-left: 12px;
+  text-align: center;
+  font-size: 32px;
+}
+header .home .text .compteur {
+  display: flex;
+  flex-direction: column;
+}
+header .home .text .compteur #demo {
+  margin: 0 auto;
+  font-size: 48px;
+}
+header .home .text .compteur p {
+  text-align: center;
+  font-size: 32px;
+}
+
+main #Line-up {
+  background-color: #EA224E;
+  height: 100vh;
+  width: 100%;
+}
+main #Line-up .lineup {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+main #Line-up .lineup .lineups {
+  height: 100vh;
+  width: 33vw;
+  color: white;
+  background-color: #1A0D43;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #Line-up .lineup .lineups img {
+  display: block;
+  transition: opacity 0.5s ease;
+}
+main #Line-up .lineup .lineups img:hover {
+  opacity: 0.7;
+}
+main #Line-up .lineup .lineups h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+main #Line-up .lineup .lineups .img3 {
+  margin-bottom: 50px;
+  width: 300px;
+  height: 300px;
+}
+main #Line-up .lineup .lineups .img4 {
+  margin-bottom: 32px;
+}
+main #Line-up .lineup .lineups .titrem {
+  width: 100%;
+}
+main #Line-up .lineup .lineups .titrem h1, main #Line-up .lineup .lineups .titrem h2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+main #Line-up .lineup #lineup1, main #Line-up .lineup #lineup3 {
+  width: 300px;
+  background-color: #EA224E;
+  width: auto;
+}
+main #Line-up .lineup #lineup1 h1, main #Line-up .lineup #lineup3 h1 {
+  color: #EA224E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+}
+main #Line-up .lineup #lineup1 .titrem, main #Line-up .lineup #lineup3 .titrem {
+  width: 100%;
+}
+main #Line-up .lineup #lineup1 .titrem h1, main #Line-up .lineup #lineup1 .titrem h2, main #Line-up .lineup #lineup3 .titrem h1, main #Line-up .lineup #lineup3 .titrem h2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+main .activite {
+  height: fit-content;
+  background-color: #1A0D43;
+  color: white;
+}
+main .activite h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 95px;
+}
+main .activite .activites {
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .activite .activites h2 {
+  font-size: 32px;
+  text-align: center;
+  padding: 15px;
+}
+main .activite .activites img {
+  padding-bottom: 24px;
+}
+main .activite .activites p {
+  font-size: 24px;
+  padding: 12px 0;
+}
+main .activite .activites .bouton2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+main .activite .activites .activite2 .bouton2 {
+  margin-top: 72px;
+}
+main .Tickets {
+  background-color: #EA224E;
+  color: white;
+  height: fit-content;
+}
+main .Tickets h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 95px;
+  padding-bottom: 15px;
+}
+main .Tickets .ticket {
+  height: 850px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 15px;
+}
+main .Tickets .ticket h2 {
+  text-align: center;
+  font-size: 40px;
+}
+main .Tickets .ticket img {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 32px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+main .Tickets .ticket .bouton2 {
+  margin-top: 27vh;
+  margin-bottom: 32px;
+}
+main .Tickets .ticket .fonct {
+  display: flex;
+  align-items: center;
+  margin-left: 2.3vw;
+}
+main .Tickets .ticket .fonct p {
+  margin: 0;
+}
+main .Tickets .ticket .fonct img {
+  flex-basis: auto;
+  margin: 0;
+  width: 15px;
+  padding-left: 0;
+  padding-bottom: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+}
+main .Tickets .ticket .ticket1 .bouton2, main .Tickets .ticket .ticket2 .bouton2 {
+  margin-top: 200px;
+}
+main .Tickets .ticket .ticket1 {
+  width: 23vw;
+  background-color: #1A0D43;
+}
+main .Tickets .ticket .ticket2 {
+  width: 23vw;
+  background-color: #1A0D43;
+}
+main .Tickets .ticket .ticket3 {
+  width: 23vw;
+  background-color: #1A0D43;
+}
+main .Tickets .ticket .ticket3 .bouton2 {
+  margin-top: 124px;
+}
+main .Infos {
+  color: white;
+  height: 70vh;
+  background-color: #1A0D43;
+}
+main .Infos h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 95px;
+}
+main .Infos .infos {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-between;
+}
+main .Infos .infos h2 {
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+}
+main .Infos .infos .contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9vh;
+}
+main .Infos .infos .contact .contacts {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+main .Infos .infos .contact .contacts img {
+  margin: 0;
+  padding-right: 15px;
+}
+main .Infos .infos .contact .contacts p {
+  width: 262px;
+  font-size: 24px;
+}
+main .Infos .infos .lieux {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5vh;
+  justify-content: center;
+  margin: 0;
+}
+main .Infos .infos .lieux iframe {
+  width: 35vw;
+}
+
+footer {
+  overflow: hidden;
+  width: 100%;
+  background-color: #E3D56D;
+  height: fit-content;
+}
+footer .sponsor {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  column-gap: 5vh;
+}
+footer .footer3 {
+  padding-top: 3vh;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+footer .footer3 .menuf {
+  display: grid;
+  width: 24vw;
+  font-size: 16px;
+  row-gap: 8px;
+}
+footer .footer3 .menuf a {
+  text-decoration: none;
+  color: black;
+}
+footer .footer3 .logof {
+  width: 24vw;
+  text-align: center;
+}
+footer .footer3 .iconf {
+  width: 24vw;
+  height: fit-content;
+  display: flex;
+}
+footer #copyrightf {
+  display: block;
+}
+footer #copyrightf p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#headerart nav {
+  padding: 0;
+}
+
+#artiste {
+  background-color: #1A0D43;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+#artiste .bouton2 {
+  width: 20px;
+  height: 20px;
+}
+#artiste .titrefa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 95px;
+}
+#artiste .titrefa h1 {
+  text-align: center;
+}
+#artiste .artiste {
+  display: flex;
+  gap: 5vw;
+  padding-top: 5vh;
+}
+#artiste .artiste .photo {
+  width: 40vw;
+}
+#artiste .artiste .logoa {
+  width: 100%;
+  display: flex;
+}
+#artiste .artiste .expl {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+#artiste .artiste .expl h2, #artiste .artiste .expl h3 {
+  margin: 0;
+}
+#artiste .artiste .expl h2 {
+  font-size: 40px;
+}
+#artiste .artiste .expl h3 {
+  font-size: 32px;
+}
+#artiste .artiste .expl p {
+  padding-top: 30px;
+  font-size: 17px;
+}
+#artiste .spotf {
+  margin-top: 15px;
+  display: flex;
+  width: 70%;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+#artiste .spotf iframe {
+  width: 60vw;
+}
+#artiste #logoa2 {
+  display: none;
+}
+
+input {
+  width: 70%;
+  height: 60px;
+  background-color: #E3D56D;
+  border-radius: 150px;
+}
+
+#headerform nav {
+  padding: 0;
+}
+
+#formulaire {
+  background-color: #1A0D43;
+  height: fit-content;
+  color: white;
+}
+#formulaire h1 {
+  padding-top: 95px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 32px;
+}
+#formulaire .formulaires h2 {
+  margin-left: 15%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#formulaire .formulaires input {
+  margin-bottom: 5vh;
+}
+#formulaire .formulaires .formulaire {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#formulaire .formulaires .formulaire input {
+  margin-bottom: 5vh;
+}
+#formulaire .formulaireText {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#formulaire .formulaireText textarea {
+  height: 15vh;
+  width: 70%;
+  background-color: #E3D56D;
+}
+#formulaire .downMusic {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#formulaire .envoyer {
+  width: 100%;
+  display: flex;
+}
+#formulaire .envoyer input {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-left: 45vw;
+  height: 100px;
+  width: 200px;
+}
+
+#counter-display {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#headerach nav {
+  padding: 0;
+}
+#headerach #menu {
+  background-color: #EA224E;
+}
+
+#acheter {
+  background-color: #EA224E;
+  color: white;
+  height: 100vh;
+}
+#acheter .titrefa {
+  padding-top: 95px;
+  width: 100%;
+  display: flex;
+  padding-bottom: 80px;
+}
+#acheter .maina {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#acheter .maina .acheter {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+#acheter .maina .acheter p {
+  width: 45%;
+}
+#acheter .maina .acheter .bouton2 {
+  display: flex;
+  align-items: center;
+  background-color: #E3D56D;
+  border-radius: 150px;
+  padding: 10px;
+  width: 250px;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+#acheter .maina .acheter .bouton2.clicked {
+  background-color: white;
+}
+#acheter .maina .acheter .bouton2 .text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 18px;
+  color: black;
+}
+#acheter .maina .acheter .bouton2 .plus, #acheter .maina .acheter .bouton2 .minus {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+#acheter .maina .acheter .bouton2 .plus {
+  order: 2;
+  margin-left: auto;
+}
+#acheter .maina .acheter .bouton2 .minus {
+  order: 1;
+  margin-right: auto;
+}
+#acheter .maina .acheter .bouton2 .counter-display {
+  font-size: 24px;
+  color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  margin: 0;
+}
+
+@media all and (max-height: 1000px) {
+  main #artiste {
+    height: fit-content;
+  }
+  main #Line-up {
+    height: 832px;
+  }
+  main #Line-up .lineup .lineups {
+    height: 832px;
+  }
+  main .Tickets {
+    height: fit-content;
+  }
+  main .Tickets .ticket {
+    height: 700px;
+    padding-bottom: 15px;
+  }
+  main .Tickets .ticket .ticket1 .bouton2, main .Tickets .ticket .ticket2 .bouton2 {
+    margin-top: 200px;
+  }
+  main .Tickets .ticket .ticket3 .bouton2 {
+    margin-top: 124px;
+  }
+  main .Infos {
+    height: fit-content;
+  }
+  main .Infos .infos {
+    grid-template-areas: "lieux lieux lieux lieux lieux lieux" "contact contact contact contact contact contact";
+    justify-content: center;
+  }
+  main .Infos .infos .contact {
+    grid-area: contact;
+  }
+  main .Infos .infos .contact #gmail {
+    margin-bottom: 15px;
+  }
+  main .Infos .infos .lieux {
+    grid-area: lieux;
+  }
+  main .Infos .infos .lieux iframe {
+    width: 75vw;
+  }
+  footer {
+    height: fit-content;
+  }
+  footer .footer3 {
+    height: 440px;
+  }
+  #acheter {
+    height: 999px;
+  }
+  #acheter .maina {
+    height: 600px;
+  }
+}
+@media all and (max-width: 1194px) {
+  .wrapper {
+    margin: 0 24px;
+  }
+  h1 {
+    padding-top: 12px;
+  }
+  header {
+    width: 100%;
+    height: fit-content;
+  }
+  header nav #burger-menu {
+    display: flex;
+    display: block;
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin-left: 5px;
+    margin-top: 25px;
+    overflow: visible;
+    position: fixed;
+    opacity: 100%;
+    z-index: 2;
+  }
+  header nav #burger-menu span,
+  header nav #burger-menu span:before,
+  header nav #burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 2px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+  }
+  header nav #burger-menu span:before,
+  header nav #burger-menu span:after {
+    content: "";
+  }
+  header nav #burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 27px;
+  }
+  header nav #burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+  }
+  header nav #burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 27px;
+  }
+  header nav #burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+  }
+  header nav #burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+  }
+  header nav #burger-menu.close span:after {
+    top: 0px;
+    left: 0;
+    transform: rotate(90deg);
+    opacity: 0;
+    width: 0;
+  }
+  header nav #menu {
+    z-index: 1;
+    width: 105%;
+    min-height: 100%;
+    margin-left: -5%;
+    position: fixed;
+    top: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  header nav #menu.overlay {
+    visibility: visible;
+    opacity: 1;
+    padding-top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  header nav #menu ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  header nav #menu ul li {
+    list-style: none;
+  }
+  header nav #menu ul li a {
+    color: #fff;
+    display: block;
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    position: relative;
+  }
+  header .home {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    padding: 0;
+  }
+  header .home img {
+    transform: rotate(90deg);
+    height: 80vw;
+    width: auto;
+  }
+  header .home .text {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 40px;
+  }
+  header .home .text .compteur {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  header .home .text .bouton {
+    display: flex;
+    background-color: #E3D56D;
+    border-radius: 150px;
+    padding: 10px;
+    width: 200px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  header .home .text .bouton a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+  }
+  main #Line-up {
+    height: fit-content;
+  }
+  main #Line-up .lineup {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 15px;
+  }
+  main #Line-up .lineup #lineup1 h1 {
+    color: #fff;
+  }
+  main #Line-up .lineup #lineup2 {
+    width: 86vw;
+  }
+  main #Line-up .lineup #lineup2 h1 {
+    color: #1A0D43;
+    display: none;
+  }
+  main #Line-up .lineup #lineup3 h1 {
+    display: none;
+  }
+  main .activite h1 {
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  main .activite .activite1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main .activite .activite1 img {
+    width: 80vw;
+  }
+  main .activite .activite1 p {
+    width: 80vw;
+  }
+  main .activite .activite2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main .activite .activite2 p {
+    width: 80vw;
+  }
+  main .activite .activite2 img {
+    width: 80vw;
+  }
+  main .Tickets {
+    background-color: #1A0D43;
+    color: white;
+    height: fit-content;
+  }
+  main .Tickets h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .Tickets .ticket {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  main .Tickets .ticket h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  main .Tickets .ticket img {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+    padding-bottom: 0;
+  }
+  main .Tickets .ticket .bouton2 {
+    margin-top: 14vh;
+    margin-bottom: 32px;
+  }
+  main .Tickets .ticket .fonct {
+    display: flex;
+    align-items: center;
+    margin-left: 8vw;
+  }
+  main .Tickets .ticket .fonct p {
+    margin: 0;
+  }
+  main .Tickets .ticket .fonct img {
+    flex-basis: auto;
+    padding-left: 10%;
+    margin: 0;
+    width: 15px;
+    padding-left: 0;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+  main .Tickets .ticket .ticket1 {
+    width: 80vw;
+    background-color: #1A0D43;
+  }
+  main .Tickets .ticket .ticket2 {
+    width: 80vw;
+    background-color: #1A0D43;
+  }
+  main .Tickets .ticket .ticket3 {
+    width: 80vw;
+    background-color: #1A0D43;
+  }
+  main .Tickets .ticket .ticket3 .bouton2 {
+    margin-top: 8vh;
+  }
+  main .Infos {
+    height: fit-content;
+  }
+  main .Infos h1 {
+    padding-top: 15px;
+    padding-bottom: 50px;
+  }
+  main .Infos .infos {
+    grid-template-areas: "lieux lieux lieux lieux lieux lieux" "contact contact contact contact contact contact";
+    justify-content: center;
+  }
+  main .Infos .infos .contact {
+    grid-area: contact;
+    row-gap: 3vh;
+  }
+  main .Infos .infos .contact .contacts img {
+    padding-right: 2vh;
+  }
+  main .Infos .infos .contact .contacts p {
+    width: 230px;
+    font-size: 20px;
+  }
+  main .Infos .infos .contact #gmail {
+    margin-bottom: 15px;
+  }
+  main .Infos .infos .lieux {
+    grid-area: lieux;
+  }
+  main .Infos .infos .lieux iframe {
+    width: 75vw;
+  }
+  footer .sponsor {
+    padding-top: 30px;
+    width: 100%;
+    display: grid;
+    column-gap: 2vh;
+    grid-template-areas: "eri eri  fwb fwb proxi proxi " "fuze fuze fuze  win win win ";
+    align-items: center;
+  }
+  footer .sponsor #fuze {
+    grid-area: fuze;
+  }
+  footer .sponsor #win {
+    grid-area: win;
+  }
+  footer .sponsor #eri {
+    grid-area: eri;
+  }
+  footer .sponsor #fwb {
+    grid-area: fwb;
+  }
+  footer .sponsor #proxi {
+    grid-area: proxi;
+  }
+  footer .footer3 {
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "logof logof logof logof" "menuf menuf iconf iconf";
+  }
+  footer .footer3 .menuf {
+    grid-area: menuf;
+  }
+  footer .footer3 .logof {
+    width: 100%;
+    grid-area: logof;
+    overflow: hidden;
+  }
+  footer .footer3 .iconf {
+    grid-area: iconf;
+  }
+}
+@media all and (max-width: 1505px) {
+  main .activite .activites {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media all and (max-width: 1575px) {
+  main #Line-up .wrapper {
+    margin: 0 50px;
+  }
+}
+@media all and (min-width: 2130px) {
+  header .home img {
+    height: 90vh;
+    width: auto;
+  }
+}
+@media all and (max-width: 870px) {
+  .bouton2 a {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  header .home .text h1 {
+    font-size: 40px;
+  }
+  header .home .text p {
+    font-size: 24px;
+  }
+  header .home .text .compteur #demo {
+    font-size: 28px;
+  }
+  header .home .text .compteur p {
+    font-size: 24px;
+  }
+  main #Line-up .lineup .lineups .img3 {
+    width: 200px;
+    height: 200px;
+  }
+  main #Line-up .lineup #lineup2 {
+    width: 80vw;
+  }
+  main .activite .activites p {
+    font-size: 16px;
+  }
+  main .Infos .infos .contact .contacts p {
+    font-size: 16px;
+  }
+  #artiste {
+    width: 100vw;
+    height: max-content;
+  }
+  #artiste .artiste {
+    flex-direction: column;
+  }
+  #artiste .artiste .photo {
+    width: auto;
+  }
+  #artiste .artiste .photo img {
+    width: 250px;
+  }
+  #artiste .artiste #logoa1 {
+    display: none;
+  }
+  #artiste .artiste .expl {
+    text-align: center;
+  }
+  #artiste #logoa2 {
+    display: block;
+    display: flex;
+    width: 320px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  #artiste .spotf {
+    margin: auto;
+    padding-top: 15px;
+  }
+  #acheter {
+    overflow: hidden;
+  }
+  #acheter .maina {
+    font-size: 16px;
+  }
+  #acheter .maina .acheter .bouton2 {
+    width: 130px;
+  }
+  #formulaire .envoyer input {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+@media all and (max-height: 1209px) {
+  #formulaire {
+    height: 100%;
+  }
+}
+@media all and (max-height: 988px) {
+  #artiste {
+    height: fit-content;
+  }
+}
+@media all and (max-width: 370px) {
+  footer .sponsor {
+    grid-template-areas: "eri" "fwb" "proxi" "fuze" "win";
+  }
+  main #Line-up .lineup #lineup2 {
+    width: fit-content;
+  }
+  main .Infos .infos .contact .contacts p {
+    width: fit-content;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+    </style>
+    <title>Achat</title>
+</head>
+<body>
+    <header id="headerach">
+        <nav >
+            <div id="burger-menu">
+                <span></span>
+            </div>
+              
+            <div id="menu">
+                  
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li  ><a href="index.html#Line-up"
+                        >Line-up</a></li>
+                    <li><a href="index.html#activite"
+                        >Activités</a></li>
+                    <li><a href="index.html#ticket"
+                        >Tickets</a></li>
+                    <li><a href="index.html#info"
+                        >Infos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="acheter">
+        <div class="wrapper">
+            <div class="titrefa">
+                <div class="bouton2 btn-g">
+                    <img  src="icon/fleche-inverse.png" alt="fleche-inverse">
+                    <a   href="index.html" class="gauche">menu</a>
+                </div>
+                <h1  >Tickets</h1>
+                <div class="bouton2 btn-d">
+                    <a   href="index.html"class="droite">panier</a>
+                    <img src="icon/fleche.png"  alt="fleche">
+                </div>
+            </div>
+            <div class="maina">
+                
+                <div class="acheter">
+                    <p  >16/9  billet standard : main stage   75€ </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                <div class="acheter">
+                    <p  >17/9  billet standard : main stage   75€  </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                <div class="acheter">
+                    <p  >18/9  billet standard : main stage   75€  </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                <div class="acheter">
+                    <p  >  billet fan(3jours )                             210€ </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                <div class="acheter">
+                    <p  >billet vip(3jours)                              300€ </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                <div class="acheter">
+                    <p  >nourriture/boisson                             25€  </p>
+                    <div class="counter-container">
+                        <button class="counter-button bouton2">
+                            <span class="plus" style="display: none;">+</span>
+                            <span class="counter-display" style="display: none;">0</span>
+                            <span class="minus" style="display: none;">-</span>
+                            <span class="text">Ajouter au panier</span>
+                        </button>
+                
+                    </div>
+                </div>
+                
+            </div>
+              
+        </div>
+    </main>
+    <script>
+            var burgerMenu = document.getElementById('burger-menu');
+
+            var overlay = document.getElementById('menu');
+
+            burgerMenu.addEventListener('click', function() {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+            });
+            
+            document.querySelectorAll('.counter-button').forEach(button => {
+                let counter = 0;
+                let firstClick = true;
+
+                const counterDisplay = button.querySelector('.counter-display');
+                const plusSpan = button.querySelector('.plus');
+                const minusSpan = button.querySelector('.minus');
+                const textSpan = button.querySelector('.text');
+
+                button.addEventListener('click', (event) => {
+                    if (firstClick) {
+                        firstClick = false;
+                        button.classList.add('clicked'); // Ajouter la classe 'clicked' pour le fond blanc
+                        plusSpan.style.display = 'inline';
+                        minusSpan.style.display = 'inline';
+                        counterDisplay.style.display = 'inline';
+                        textSpan.style.display = 'none'; // Cacher le texte "Ajouter au panier"
+                        button.style.justifyContent = 'center'; // Centrer horizontalement
+                        button.style.alignItems = 'center'; // Centrer verticalement
+                    }
+
+                    const rect = button.getBoundingClientRect();
+                    const clickX = event.clientX - rect.left;
+
+                    if (clickX < rect.width / 3 && counter > 0) {
+                        counter--;
+                    } else if (clickX > rect.width * 2 / 3) {
+                        counter++;
+                    }
+
+                    counterDisplay.textContent = counter;
+                });
+            });
+    </script>
+</body>
+</html>
